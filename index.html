@@ -27,8 +27,8 @@
 
 <div id='Content' style="display:none">
 <div class="kolomteks"><p id="text"></p><p style="font-size:.80rem;" id="text2"></p></div>
-<div id="trm" class="contTom"><a style="margin:12px 12px 12px 0;" class='button' onClick="lanjutan();"></i>Lanjut</a></div>
-<a id="whs" class='button whatsapp' onClick='bukaWa();'><i class='icon whatsapp'></i>Kirim pesan</a>
+<div id="trm" class="contTom"><a style="margin:12px 12px 12px 0;" class='button' onClick="lanjutan();"></i>Klik untuk Lanjut (WAJIB)</a></div>
+<a id="whs" class='button whatsapp' onClick='bukaWa();'><i class='icon whatsapp'></i>Kirim pesan ke aku ya...</a>
 </div>
 
     <script src="script.js"></script>
@@ -47,14 +47,14 @@
                 if(nama){
                   play();
                 	window.nama = nama;
-                    text2 = "Dari: " + author + ", untuk: " + window.nama + " Sayang";
+                    text2 = "Dari: " + author + ", untuk: " + window.nama + " ";
                     text4 = "I Love U, " + window.nama + "!";         
                 	await swals.fire(`Hai, ${nama}! &#10084;&#65039;`);
                     await swals.fire(`Sekarang lihat ini ya &#10084;&#65039;`);
                     ketik();showDiv();showFt();
                     document.getElementById("namamu").innerHTML = "Halo, " + nama + "!";                    
                 } else {
-                    await swals.fire('Isi namanya ayanggg');
+                    await swals.fire('Isi namanya Dong...');
                     await swals.fire('Gak boleh kosong');
                     mulai();
                 }
@@ -62,20 +62,20 @@
             mulai()
             async function lanjutan(){
                     var { value: sayang } = await swals.fire({
-                        title: `Sebenernya, ${nama} sayang gak sama ${author} :(`,
+                        title: `Sebenernya, ${author} suka sama ${nama} jadi... ${nama} mau nggak jadian sama ${author}..? 🙏`,
                         showDenyButton: true,
                         showCancelButton: false,
-                        confirmButtonText: 'Sayang',
-                        denyButtonText: `Gak sayang`,
+                        confirmButtonText: 'Iya, Mau...',
+                        denyButtonText: `Maaf,Aku tidak bisa sama kamu`,
                         allowOutsideClick: false,
                     }).then((result) => {
                         if (result.isConfirmed) {
-                             window.sayang = "sayang";lanjutan2();    
-                        } else if (result.isDenied) {window.sayang = "enggak sayang";window.persen = "%3A%2F";Swal.fire('Yaudah deh gpp:(');whs();}})}
+                             window.sayang = "Iya, Mau...";lanjutan2();    
+                        } else if (result.isDenied) {window.sayang = "maaf, aku tidak bisa";window.persen = "%3A%2F";Swal.fire('Yaudah deh gpp:(');whs();}})}
   
                     async function lanjutan2(){
                         var { value: persen } = await swals.fire({
-                            title: 'Seberapa sayang?',
+                            title: 'Seberapa maunya..?',
                             icon: 'question',
                             input: 'range',
                             inputLabel: 'Antara 10-100% ya',
@@ -88,18 +88,18 @@
                         });
                         if(persen){
                         	window.persen = persen + '%25';
-                        	await swals.fire(`Maacii udah sayang sama ${author} ${persen}%`);
+                        	await swals.fire(`Maacii udah nerima  ${author} ${persen}%`);
                             iloveu();siap();whs();
                             }
                         }
-                        function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=6283132657748&text=Hai,%20" + "*" + nama + "*" + " udah baca semuanya" + "%0A%0A" + "*" + nama + "*" + "%20" + window.sayang + " sama kamu " + "*" + window.persen + "*" + "%0A%0A" + dateTime;}
+                        function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=6283132657748&text=Hai Bos,%20" + "*" + nama + "*" + " udah baca semuanya" + "%0A%0A" + "*" + nama + "*" + "%20" + window.sayang + " sama kamu " + "*" + window.persen + "*" + "%0A%0A" + dateTime;}
 </script>
     <script>
   var i=0,text;
   text = "Maaf ya, mungkin aku kurang gentle kalo masalah nembak cewek. Tapi jujur aku suka dan sayang banget sama kamu..."
   var u=0,text2;//Text2 ada di if(nama)  
   var o=0,text3;
-  text3 = "Lihat ini sayang...                                 "
+  text3 = "Lihat ini coba😁...                                 "
   var a=0,text4;//Text4 ada di if(nama)
 </script>
   </body>
