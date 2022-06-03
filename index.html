@@ -1,106 +1,227 @@
-
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Halo!</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js">
+<head><title>Syafira Putri Linanti</title><meta data-n-head="1" charset="utf-8"><meta data-n-head="1" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="1" name="viewport" content="width=device-width,user-scalable=no"><meta data-n-head="1" http-equiv="X-UA-Compatible" content="ie=edge"><meta data-n-head="1" name="apple-mobile-web-app-title" content="Twibbonize"><meta data-n-head="1" name="application-name" content="Twibbonize"><meta data-n-head="1" name="msapplication-TileColor" content="#1baaa0"><meta data-n-head="1" name="theme-color" content="#1baaa0"><meta data-n-head="1" name="theme-color" content="#1baaa0"><meta data-n-head="1" name="description" content="Where campaigns meet you!"><meta data-n-head="1" name="keywords" content="Twibbon, Campaign, Frame"><link data-n-head="1" rel="apple-touch-icon" sizes="180x180" href="/favicon-32x32.png"><link data-n-head="1" rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link data-n-head="1" rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link data-n-head="1" rel="manifest" href="/site.webmanifest"><link data-n-head="1" rel="mask-icon" href="/safari-pinned-tab.svg" color="#1baaa0"><script data-n-head="1" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script><link rel="modulepreload" href="/_nuxt/ac04698.modern.js" as="script"><link rel="modulepreload" href="/_nuxt/006ed3e.modern.js" as="script"><link rel="modulepreload" href="/_nuxt/b3daf88.modern.js" as="script"><link rel="modulepreload" href="/_nuxt/699eee6.modern.js" as="script">
+<!-- Edited by 51ny03 -->
+<script>alert ('Halu gays..')
+alert ('Ini hasil yang di tunggu tunggu ;>')</script>
+<script language="JavaScript"> 
+ 
+function tb5_makeArray(n){
+ this.length = n;
+ return this.length;
+}
+ 
+tb5_messages = new tb5_makeArray(3);
+tb5_messages[0] = "Hay Fira";
+tb5_messages[1] = "Aku Mau Kamu Tau";
+tb5_messages[2] = "Aku Sayang Sama Kamu";
+tb5_messages[3] = "Suer dah..";
+tb5_messages[4] = "Kamu Sayang nggak sama aku...?";
+tb5_messages[5] = "Aku berharap kamu jujur"
+tb5_messages[6] = "I Love You Fira!!!";
+tb5_messages[7] = "Syafira Putri Linanti.."
+tb5_rptType = 'infinite';
+tb5_rptNbr = 10;
+tb5_speed = 25;
+tb5_delay = 1000;
+var tb5_counter=5;
+var tb5_currMsg=0;
+var tb5_stsmsg="5";
+function tb5_shuffle(arr){
+var k;
+for (i=0; i<arr.length; i++){
+ k = Math.round(Math.random() * (arr.length - i - 1)) + i;
+ temp = arr[i];arr[i]=arr[k];arr[k]=temp;
+}
+return arr;
+}
+tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+ tb5_arr[i] = i;
+ tb5_sts[i] = "_";
+}
+tb5_arr = tb5_shuffle(tb5_arr);
+function tb5_init(n){
+var k;
+if (n == tb5_arr.length){
+ if (tb5_currMsg == tb5_messages.length-1){
+ if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr)){
+ clearTimeout(tb5_timerID);
+ return;
+ }
+ tb5_counter++;
+ tb5_currMsg=0;
+ }
+ else{
+ tb5_currMsg++;
+ }
+ n=0;
+ tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+ tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+ for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+ tb5_arr[i] = i;
+ tb5_sts[i] = "_";
+ }
+ tb5_arr = tb5_shuffle(tb5_arr);
+ tb5_sp=tb5_delay;
+}
+else{
+ tb5_sp=tb5_speed;
+ k = tb5_arr[n];
+ tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k);
+ tb5_stsmsg = "";
+ for (var i=0; i<tb5_sts.length; i++)
+ tb5_stsmsg += tb5_sts[i];
+ document.title = tb5_stsmsg;
+ n++;
+ }
+ tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);
+}
+function tb5_randomizetitle(){
+ tb5_init(0);
+}
+tb5_randomizetitle();
+ 
 </script>
-  </head>
-  <body>
-    <style>
-        {
-            background-color: black;
-        }
-    </style>
-    <div id="foto" class="foto" style="display:none">
-<div class="image">
-<!-- Foto Kamu --><img id="ftKm" src="https://sportourism.id/wp-content/uploads/2021/08/7.png" width="100px" height="145px"/>
-<!-- Foto Aku --><img id="ftAk" style="opacity:0;position:absolute;" src="https://sportourism.id/wp-content/uploads/2021/08/7a.png" width="100px" height="145px"/></div>
-<!-- Nama Kamu --><span id="sp1"><b id="namamu"></b><div id="lope" style="display:inline-block;align-items:center;justify-content:center;">💌</div></span>
-<div id="sp2" style="display:none;"><span style="font-size:13px;" id="text3"></span></div>
-<div id="sp3" style="display:none;"><span id="text4"></span></div>
-</div>
+</br><center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7otv7kma8A9cFP875b4bvd3WTbLUHu6W0Yw&usqp=CAU"alt="Lolykuu" width="200px" height="200px"/></a> 
+</head>
+<body BGCOLOR="black">
+<center><center>
+<br><font size="7"><font color="green" face="courier new">Touched by:51ny03</font>
+<br><br><!-- Editedy 51ny03 -->
+<font size="5"><font color="red" face="courier new">Hai Ayang... ini dia hasil karya sekaligus pertanyaanku</font>
+<br><font size="4,5"><font color="red" face="courier new">Selama ini kita kan hanya chatingan sama telponan aja...</font>
+<br><font size="4,5"><font color="white" face="courier new">jadi, gimana kalo kita jalan apa mantai gitu, mumpung aku ada rencana sama temen nih..;). </font>
+<br><font size="4"><font color="white" face="courier new">jadi gimana... mau nggak?!?</font>
+<br><a href="https://api.whatsapp.com/send?phone=6283132657748&text=Ya%20aku%20Mau%20Ikut"><input type="button" value="Yes I can" onclick="alert('OTW Jemput ayang yah...');" style='font_size': 5"></a><><><><a href="https://api.whatsapp.com/send?phone=6283132657748&text=maaf%20aku%20nggabisa%20Ikut"><input type="button" value=" No I can't" onclick="alert('Karep e pean ws ^_^');" style="font size="5"></a>
+<br><br><br><hr color="red"><!--  Editedy 51ny03 -->
+<font size="4"><font color="white" face="courier new">("Thanks to:")</font>
+<marquee><font size="3"><font color="white" face="courier new">[Hacker Rusak-Purba Black Hat-Konco PLek Cyber Hat-Cyber Patah Hati-Hacker Patah Hati-Defacer Random Ulti-Galau Cyber Team-Herex Defacer-KPlek Web Designer Team]</marquee>
+<br><br><font size="4.5"><font color="white" face="courier new">My friends:)</font>
+<br><font size="3.5"><font color="white" face="courier new">[Mr.Random - Mr.Ex09 - Mr.X0991]</font>
+<br><br><br><a href="https://www.instagram.com/wong_jadul09/"><input type="button" value="Contact me on Instagram please.." onclick="alert('tunggu ya ayang.., click ok');"></a>
+</body>
+<style type="text/css">
+<body> "a:hover" {cursor= url"(http://cur.cursors-4u.net/cursors/cur-9/cur862.ani)", url"(http://cur.cursors-4u.net/cursors/cur-9/cur862.png)", progress !important; 
+</style>
 
-<div id='Content' style="display:none">
-<div class="kolomteks"><p id="text"></p><p style="font-size:.80rem;" id="text2"></p></div>
-<div id="trm" class="contTom"><a style="margin:12px 12px 12px 0;" class='button' onClick="lanjutan();"></i>Klik untuk Lanjut (WAJIB)</a></div>
-<a id="whs" class='button whatsapp' onClick='bukaWa();'><i class='icon whatsapp'></i>Kirim pesan ke aku ya...</a>
-</div>
 
-    <script src="script.js"></script>
-    <script type="text/javascript">
-            var author = 'SinyoeX009';
-            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
-            var swals = Swal
-            async function mulai(){
-                var { value: nama } = await swals.fire({
-                    title: 'Nama kamu?',
-                    input: 'text',
-                    confirmButtonText: 'Next',
-                    allowOutsideClick: false,
-                    showCancelButton: false,
-                });                           
-                if(nama){
-                  play();
-                	window.nama = nama;
-                    text2 = "Dari: " + author + ", untuk: " + window.nama + " ";
-                    text4 = "I Love U, " + window.nama + "!";         
-                	await swals.fire(`Hai, ${nama}! &#10084;&#65039;`);
-                    await swals.fire(`Sekarang lihat ini ya &#10084;&#65039;`);
-                    ketik();showDiv();showFt();
-                    document.getElementById("namamu").innerHTML = "Halo, " + nama + "!";                    
-                } else {
-                    await swals.fire('Isi namanya Dong...');
-                    await swals.fire('Gak boleh kosong');
-                    mulai();
-                }
-            }
-            mulai()
-            async function lanjutan(){
-                    var { value: sayang } = await swals.fire({
-                        title: `Sebenernya, ${author} suka sama ${nama} jadi... ${nama} mau nggak jadian sama ${author}..? 🙏`,
-                        showDenyButton: true,
-                        showCancelButton: false,
-                        confirmButtonText: 'Iya, Mau...',
-                        denyButtonText: `Maaf,Aku tidak bisa sama kamu`,
-                        allowOutsideClick: false,
-                    }).then((result) => {
-                        if (result.isConfirmed) {
-                             window.sayang = "Iya, Mau...";lanjutan2();    
-                        } else if (result.isDenied) {window.sayang = "maaf, aku tidak bisa";window.persen = "%3A%2F";Swal.fire('Yaudah deh gpp:(');whs();}})}
-  
-                    async function lanjutan2(){
-                        var { value: persen } = await swals.fire({
-                            title: 'Seberapa maunya..?',
-                            icon: 'question',
-                            input: 'range',
-                            inputLabel: 'Antara 10-100% ya',
-                            inputAttributes: {
-                                min: 1,
-                                max: 100,
-                            },
-                            allowOutsideClick: false,
-                            inputValue: 50
-                        });
-                        if(persen){
-                        	window.persen = persen + '%25';
-                        	await swals.fire(`Maacii udah nerima  ${author} ${persen}%`);
-                            iloveu();siap();whs();
-                            }
-                        }
-                        function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=6283132657748&text=Hai Bos,%20" + "*" + nama + "*" + " udah baca semuanya" + "%0A%0A" + "*" + nama + "*" + "%20" + window.sayang + " sama kamu " + "*" + window.persen + "*" + "%0A%0A" + dateTime;}
+
+<style type="text/css">
+
+#outerCircleText {
+
+font-style: courier new;
+font-weight: bold;
+font-family: 'comic sans ms', verdana, arial;
+color: green;
+
+position: absolute;top: 0;left: 0;z-index: 3000;cursor: ;}
+#outerCircleText div {position: relative;}
+#outerCircleText div div {position: absolute;top: 0;left: 0;text-align: center;}
+
+</style>
+<script type="text/javascript">
+
+
+;(function(){
+
+
+var msg = " Love you, Syafira Putri Linanti :*";
+
+var size = 15;
+
+
+var circleY = 0.80; var circleX = 3;
+
+var letter_spacing = 10;
+
+var diameter = 10;
+
+
+var rotation = 0.2;
+
+var speed = 0.3;
+
+
+
+if (!window.addEventListener && !window.attachEvent || !document.createElement) return;
+
+msg = msg.split('');
+var n = msg.length - 1, a = Math.round(size * diameter * 0.208333), currStep = 20,
+ymouse = a * circleY + 20, xmouse = a * circleX + 20, y = [], x = [], Y = [], X = [],
+o = document.createElement('div'), oi = document.createElement('div'),
+b = document.compatMode && document.compatMode != "BackCompat"? document.documentElement : document.body,
+
+mouse = function(e){
+ e = e || window.event;
+ ymouse = !isNaN(e.pageY)? e.pageY : e.clientY; // y-position
+ xmouse = !isNaN(e.pageX)? e.pageX : e.clientX; // x-position
+},
+
+makecircle = function(){ // rotation/positioning
+ if(init.nopy){
+  o.style.top = (b || document.body).scrollTop + 'px';
+  o.style.left = (b || document.body).scrollLeft + 'px';
+ };
+ currStep -= rotation;
+ for (var d, i = n; i > -1; --i){ // makes the circle
+  d = document.getElementById('iemsg' + i).style;
+  d.top = Math.round(y[i] + a * Math.sin((currStep + i) / letter_spacing) * circleY - 15) + 'px';
+  d.left = Math.round(x[i] + a * Math.cos((currStep + i) / letter_spacing) * circleX) + 'px';
+ };
+},
+
+drag = function(){ // makes the resistance
+ y[0] = Y[0] += (ymouse - Y[0]) * speed;
+ x[0] = X[0] += (xmouse - 20 - X[0]) * speed;
+ for (var i = n; i > 0; --i){
+  y[i] = Y[i] += (y[i-1] - Y[i]) * speed;
+  x[i] = X[i] += (x[i-1] - X[i]) * speed;
+ };
+ makecircle();
+},
+
+init = function(){ 
+ if(!isNaN(window.pageYOffset)){
+  ymouse += window.pageYOffset;
+  xmouse += window.pageXOffset;
+ } else init.nopy = true;
+ for (var d, i = n; i > -1; --i){
+  d = document.createElement('div'); d.id = 'iemsg' + i;
+  d.style.height = d.style.width = a + 'px';
+  d.appendChild(document.createTextNode(msg[i]));
+  oi.appendChild(d); y[i] = x[i] = Y[i] = X[i] = 0;
+ };
+ o.appendChild(oi); document.body.appendChild(o);
+ setInterval(drag, 25);
+},
+
+ascroll = function(){
+ ymouse += window.pageYOffset;
+ xmouse += window.pageXOffset;
+ window.removeEventListener('scroll', ascroll, false);
+};
+
+o.id = 'outerCircleText'; o.style.fontSize = size + 'px';
+
+if (window.addEventListener){
+ window.addEventListener('load', init, false);
+
+ document.addEventListener('mouseover', mouse, false);
+ document.addEventListener('mousemove', mouse, false);
+  if (/Apple/.test(navigator.vendor))
+   window.addEventListener('scroll', ascroll, false);
+}
+else if (window.attachEvent){
+ window.attachEvent('onload', init);
+ document.attachEvent('onmousemove', mouse);
+};
+
+})();
+
 </script>
-    <script>
-  var i=0,text;
-  text = "Maaf ya, mungkin aku kurang gentle kalo masalah nembak cewek. Tapi jujur aku suka dan sayang banget sama kamu..."
-  var u=0,text2;//Text2 ada di if(nama)  
-  var o=0,text3;
-  text3 = "Lihat ini coba😁...                                 "
-  var a=0,text4;//Text4 ada di if(nama)
-</script>
-  </body>
+<!-- copyright@2k23 --> <!-- By: 51ny03 --> <!-- maaf bang ini saya ganti juga-->
+<iframe width="0%" height="0%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/314301457&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 </html>
